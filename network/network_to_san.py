@@ -1,7 +1,5 @@
 import torch
 from torch import nn
-
-import chess
 class Regressor(nn.Module):
     """This manages the output. I follow a similar structure to this paper but make a few modifications (for the better or worse) 
     https://arxiv.org/abs/1712.01815
