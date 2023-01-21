@@ -15,11 +15,9 @@ class Regressor(nn.Module):
 
     def __init__(self, inputs):
         super(Regressor, self).__init__()
-        self.layer = nn.Linear(inputs, 10)
-
+        self.layer = nn.Linear(inputs, (16 * 8 * 8) + 16 )
     def forward(self, x):
         return self.layer(x)
-
 
 class UniversalChessInterface(nn.Module):
     """Take the input from the network, process it, and make it in the Universal Chess Interface
